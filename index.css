@@ -4,6 +4,11 @@ body{
     padding: 30px;
     
 }
+
+*{
+    box-sizing: border-box;
+}
+
 .section-container{
     width: 550px;
     margin: 0 auto; 
@@ -26,12 +31,35 @@ body{
     color: whitesmoke;
     width: 350px;
     height: 420px;
-    padding: 5px 25px;
-    padding-bottom: 25px;
+   
+    
     border-radius: 8px;
     box-shadow: 0px 0px 20px 1px #666;
 }
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
 .close-modal-container{
     text-align: right;
     margin-top: 5px;
+}
+.modal-close-btn{
+    color: whitesmoke;
+    background-color: deeppink;
+    border: none;
+    cursor: pointer;
+}
+.modal-close-btn:hover{
+    color: black;
+}
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
 }
