@@ -17,11 +17,25 @@ consentForm.addEventListener('submit', function(e){
     modalText.innerHTML = `
     <div class="modal-inner-loading">
     <img src="images/loading.svg" class="loading">
-    <p id="uploadText">
+    <p id="upload-text">
         Uploading your data to the dark web...
     </p>
     </div>
     `
+    setTimeout(function(){
+       document.getElementById('upload-text').textContent = `Making the sale...`
+
+    }, 1500)
+
+    setTimeout(function(){
+        document.getElementById("modal-inner").innerHTML = `
+        <h2>Thanks you sucker! </h2>
+        <p>We just sold the rights to your eternal soul.</p>
+        <div class="idiot-gif">
+        <img src="images/pirate.gif">
+        </div>`
+
+    }, 3500)
 })
 
 

@@ -90,15 +90,6 @@ img{
     width: 100%;
 }
 
-.modal-inner{
-    width: 290px;
-    margin: 0 auto;
-}
-
-.modal-inner-loading{
-    text-align: center;
-}
-
 p{
     font-size: 18px;
     line-height: 28px;
