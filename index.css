@@ -9,6 +9,10 @@ body{
     box-sizing: border-box;
 }
 
+h2{
+    margin-top: 0;
+}
+
 .section-container{
     width: 550px;
     margin: 0 auto; 
@@ -27,7 +31,7 @@ body{
     bottom: 0;
     margin: auto;
 
-    background-color: deeppink;
+    background-color: black;
     color: whitesmoke;
     width: 350px;
     height: 420px;
@@ -62,4 +66,51 @@ input{
     padding: 10px;
     width: 100%;
     border-radius: 3px;
+}
+
+input[type="submit"], button{
+    margin-top: 10px;
+    padding: 12px 17px;
+    border: none;
+    background-color: #212529;
+    color: #ecfeff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.modal-text{
+    height: 140px;
+    line-height: 23px;
+    margin-bottom: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
+.modal-inner-loading{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.modal-choice-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding: 8px 24px;
+}
+
+.modal-btn{
+    padding: 10px 24px;
+    cursor: pointer;
 }

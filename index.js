@@ -1,6 +1,8 @@
 const modal = document.getElementById("modal")
-console.log(modal)
 const closeBtn = document.getElementById("modal-close-btn")
+const consentForm = document.getElementById("consent-form")
+const modalText = document.getElementById("modal-text")
+
 
 setTimeout(function(){
     modal.style.display = 'inline'
@@ -9,3 +11,17 @@ setTimeout(function(){
 closeBtn.addEventListener("click", function(){
     modal.style.display='none'
 })
+
+consentForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    modalText.innerHTML = `
+    <div class="modal-inner-loading">
+    <img src="images/loading.svg" class="loading">
+    <p id="uploadText">
+        Uploading your data to the dark web...
+    </p>
+    </div>
+    `
+})
+
+
