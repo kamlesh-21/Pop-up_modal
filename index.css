@@ -51,13 +51,20 @@ h2{
     margin-top: 5px;
 }
 .modal-close-btn{
-    color: whitesmoke;
-    background-color: deeppink;
-    border: none;
-    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: deeppink;
 }
-.modal-close-btn:hover{
+.modal-close-btn:hover, .modal-close-btn:active{
     color: black;
+}
+
+.modal-close-btn:disabled{
+    color: whitesmoke;
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 input{
@@ -105,3 +112,9 @@ p{
     padding: 10px 24px;
     cursor: pointer;
 }
+
+.modal-display-name{
+    color: fuchsia;
+}
+
+
